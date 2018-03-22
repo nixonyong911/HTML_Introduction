@@ -1,0 +1,334 @@
+/*
+filename: nixon yong
+author: nixon yong
+create: 8/18/16
+last modified: 8/18/16
+description: tempo
+*/
+
+/*set background picture*/
+body{
+	background: url(image/background.jpg) no-repeat center center fixed;
+	background-size: cover;
+	margin: 0px;
+}
+
+/* set the content to be in middle*/
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*set content to be in the middle for refenrence*/
+.reference-container{
+	max-width: 780px;
+	margin: 0 auto;
+}
+
+/*dropdown button*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	line-height: 36px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	font-size:16px;
+    color: black;
+    text-decoration: none;
+    display: block;
+	border-radius: 100px;
+	color: #154360;
+	margin: 10px 10px;
+	padding: 10px 10px 10px 10px;
+}
+
+/* Change fontsize dropdown links on hover */
+.dropdown-content a:hover {
+	font-size:18px;
+}
+
+/* rotating animation for menu button */
+.menu:hover{
+	-webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+/*drop down content to be displayed as block */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/*set background color and border for table */
+.table {
+	border-collapse: collapse;
+	background-color: #cfd8dc;
+	width: 100%;
+	font-size: 1.25em;
+	box-shadow:0 0 10px;
+}
+
+
+/*differnt color for the table on even row*/
+.table tr:nth-child(even){
+	background-color: #90a4ae;
+}
+
+/*set padding*/
+.table td:nth-child(1){
+	padding: 15px 45px 15px 15px;
+	
+}
+
+/*set table header color*/
+.table th {
+	background-color: #607d8b;
+	padding: 10px;
+}
+
+/*set menu to be center*/
+section.navMenu{
+	text-align: center;
+	line-height: 100px;
+}
+
+
+ /*set hover effect*/
+section.navMenu a:hover{
+	/*color: #eceff1;*/
+	background-color: #616161;
+	transition: background-color 3s linear;
+	/*color: #5D6D7E;*/
+}
+
+/*set header picture*/
+section.header{
+	height: 300px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url(image/header.jpg);
+	background-size: cover;
+}
+
+/*header word*/
+section.header h1{
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 64px;
+	line-height: 300px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+	margin: 0 0 0 0;
+}
+
+/*padding on the body do it doesn't stick to the footer*/
+section.body {
+	padding-bottom: 100px;
+	padding-top: 30px;
+}
+
+/*style h2 color*/
+section.body h2{
+	font-size: 36px;
+	color: #37474F;
+}
+
+/*style p color*/
+section.body p{
+	font-size: 22px;
+	color: #546E7A;
+}
+
+/*style aside color*/
+section.body aside{
+	font-size: 22px;
+	color: #546E7A;
+}
+
+/*style li color*/
+section.body li{
+	font-size: 22px;
+	color: #455A64;
+}
+
+/*set background for the reference*/
+section.reference {
+	width: 780px;
+	height: 1080px;
+	background-image: url(image/scroll.png);
+	background-size:cover;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*style reference text*/
+section.reference p{
+	font-size: 15px;
+	color: #5d4037;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*style reference text*/
+section.reference h1{
+	text-align: center;
+	font-size: 48px;
+	font-family: georgia;
+	font-style: italic;
+	padding-top:120px;
+	color: #4e342e;
+}
+
+/*set footer picture*/
+section.footer {
+	height: 200px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-image: url(image/footer.jpg);
+}
+
+/*set footer font*/
+section.footer h2{
+	position: relative;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin: auto;
+	color: rgba(255, 255, 255, 0.8);
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.95);
+}
+
+/*set sunset picture*/
+section.enhancement{
+	height: 1000px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-image: url(image/parallax.jpg);
+	opacity: 0.8;
+}
+
+/*set font behind sunset*/
+section.enhancement h1{
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 48px;
+	line-height: 300px;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+	margin: 0 0 0 0;
+}
+
+/*set font for dropdown menu content*/
+section.enhancement p{
+	font-size: 36px;
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+	margin: 0 0 0 0;
+	color: Black;
+}
+
+/*set text for ordered list*/
+section.enhancement li{
+	font-size: 36px;
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+	margin: 0 0 0 0;
+	color: Black;
+}
+
+/*create the floating box*/
+#quiz{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 20px;
+	background-color: #607d8b;
+	box-shadow:0 0 20px;
+}
+
+/*set font for paragraph*/
+#quiz p{
+	font-size: 18px;
+}
+
+/*set legend font to white*/
+#quiz legend{
+	font-size: 24px;
+	color: #eceff1;
+	font-weight: bold;
+}
+
+/*set h2 font to white*/
+#quiz h2{
+	color: #eceff1;
+}
+
+/*so the link is centered and on line up like list*/
+#links{
+	text-align: center;
+}
+
+/*set padding so the word is centered in the footer*/
+#footerPadding {
+	padding-top:50px;
+}
+
+#supervisor{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 20px;
+	background-color: #607d8b;
+	box-shadow:0 0 20px;
+}
+
+#supervisor a{
+	font-size:20px;
+	color: #eceff1;
+	text-decoration: none;
+}
+
+#supervisor a:hover{
+	font-size:24px;
+	color: #eceff1;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#button {
+	-moz-appearance: button;
+}
+
+#button a{
+	text-decoration: none;
+	color: #000000;
+	font-size:12px;
+	
+}
+
+#button a:hover{
+	-moz-appearance: button;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+

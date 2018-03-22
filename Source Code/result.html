@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Assignment 1 reference.html"/>
+		<meta name="keywords" content="HTML5, tags"/>
+		<meta name="author" content="Nixon Yong Joe Kien, 101056211"/>
+		<link href="styles/style.css" rel="stylesheet"/>
+		<title>Result</title>
+		<script src = "scripts/result.js"></script>
+	</head>
+	<body>
+		<section class ="navMenu">
+			<div class ="container">
+				<div class="dropdown">
+					<input type="image" src="image/menu.png" class="menu" width="40" height="40" alt="menu"/>
+					<div class="dropdown-content">
+						<a href="index.html">Home</a> 
+						<a href="topic.html">XMLHttpRequest</a> 
+						<a href="reference.html">Reference</a>
+						<a href="enhancement.html">Extra 1</a>
+						<a href="enhancement2.html">Extra 2</a>
+						<a href="enhancement3.html">Extra 3</a>
+						<a href="quiz.html">Quiz</a> 
+						<a href="supervisor.html">Supervisor</a> 
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="header">
+			<div class="container">
+				<h1>Result</h1>
+			</div>
+		</section>
+		<section class="quiz">
+			<div class="container" id="quiz">
+				<form id="result">
+					<fieldset>
+						<legend>Your Result</legend>
+						<p>Your Name: <span id="confirm_name"></span></p>
+						<p>Student ID: <span id="confirm_studentID"></span></p>
+						<p>Date of Birth: <span id="confirm_DOB"></span></p>
+						<p>Sex: <span  id="confirm_sex"></span></p>
+						<p>Result: <span id="confirm_result"></span></p>
+						<p>Number of attempt: <span id="confirm_attempt"></span></p>
+						<!-- Hidden input -->
+						<input type="hidden" name="firstName" id="firstName" />
+						<input type="hidden" name="lastName" id="lastName" />
+						<input type="hidden" name="age" id="age" />
+						<input type="hidden" name="studentID" id="studentID" />
+						<input type="hidden" name="DOB" id="DOB" />
+						<input type="hidden" name="sex" id="sex" />
+						<input type="hidden" name="q1" id="q1" />
+						<input type="hidden" name="q2" id="q2" />
+						<input type="hidden" name="q3" id="q3" />
+						<input type="hidden" name="q4" id="q4" />
+						<input type="hidden" name="q5" id="q5" />
+						<!-- Save answer and Redo -->
+						<input type="submit" value="Save Result" />
+						<button type="button" id="redo">Redo</button>
+					</fieldset>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<section class="footer">
+				<div class="container" id="footerPadding">
+					<h2>101056211</h2>
+					<h2>&#169; Nixon Yong Joe Kien</h2>
+					<div id="links">
+						<a href="mailto:101056211@student.swin.edu.au"><img height="40" width="40" src="image/email.png" alt="Email Me"/></a>
+						<a href="https://www.linkedin.com/in/nixon-yong-803130108"><img height="40" width="40" src="image/linkedin.png" alt="Phone"/></a>
+						<a href="https://facebook.com/nixonyong911"><img height="40" width="40" src="image/facebook.png" alt="Phone"/></a>
+					</div>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>

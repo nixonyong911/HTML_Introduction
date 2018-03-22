@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Assignment 1 quiz.html"/>
+		<meta name="keywords" content="HTML5, tags"/>
+		<meta name="author" content="Nixon Yong Joe Kien, 101056211"/>
+		<link href="styles/style.css" rel="stylesheet"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="scripts/quiz.js"></script>
+		<script src="scripts/enhancement.js"></script>
+		<title>Quiz</title>
+	</head>
+	<body>
+		<section class ="navMenu">
+			<div class ="container">
+				<div class="dropdown">
+					<input type="image" src="image/menu.png" class="menu" width="40" height="40" alt="menu"/>
+					<div class="dropdown-content">
+						<a href="index.html">Home</a> 
+						<a href="topic.html">XMLHttpRequest</a> 
+						<a href="reference.html">Reference</a>
+						<a href="enhancement.html">Extra 1</a>
+						<a href="enhancement2.html">Extra 2</a>
+						<a href="enhancement3.html">Extra 3</a>
+						<a href="quiz.html">Quiz</a> 
+						<a href="supervisor.html">Supervisor</a> 
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="header">
+			<div class="container">
+				<h1>QUIZ TIME</h1>
+			</div>
+		</section>
+		<section class="quiz">
+			<div class="container" id="quiz">
+				<form method="post" id ="quizForm" action="PHP/markquiz.php" novalidate="novalidate">
+				<h2>Quiz ends in <span id="time"></span> minutes!</h2>
+					<fieldset>
+						<legend>Personal Infomation</legend>
+						<p><label for="firstName">First Name: </label>
+							<input type="text" name="firstName" id="firstName" required="required" pattern="[a-zA-Z]+" maxlength="20"/>
+						</p>
+						<p><label for="lastName">Last Name: </label>
+							<input type="text" name="lastName" id="lastName" required="required" pattern="[a-zA-Z]+" maxlength="20"/>
+						</p>
+						<p><label for="studentID">Student ID: </label>
+							<input type="text" name="studentID" id="studentID" required="required" pattern="[0-9]{7,10}"/>
+						</p>
+						<p><label for="DOB">Date of Birth: </label>
+							<input type="text" name="DOB" id="DOB" required="required" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="dd/mm/yyyy"/>
+						</p>
+						<p>
+							<label for="sex">Sex: </label>
+							<select name="sex" id="sex" required="required">
+								<option value="" hidden="hidden" selected="selected" disabled="disabled">Sex</option>
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+							</select>
+						</p>
+					</fieldset>
+					<fieldset>
+						<legend>Quiz</legend>
+						<fieldset id="q1"> 
+							<legend>1. XMLHttpRequest is created by who? (2 marks)</legend>
+							<p>
+								<input type="radio" name="q1" id="q1a" value="q1a" required="required"/>
+								<label for="q1a">XMLHttpRequest is creating by Microsoft when lauching Internet Explorer 5.0</label>
+							</p>
+							<p>
+								<input type="radio" name="q1" id="q1b" value="q1b"/>
+								<label for="q1b">XMLHttpRequest is creating by Microsoft when lauching Edge 5.0</label>
+							</p>
+							<p>
+								<input type="radio" name="q1" id="q1c" value="q1c"/>
+								<label for="q1c">XMLHttpRequest is creating by Apple when lauching Opera 5.0</label>
+							</p>
+							<p>
+								<input type="radio" name="q1" id="q1d" value="q1d"/>
+								<label for="q1d">XMLHttpRequest is creating by Google when lauching Google Chrome 5.0</label>
+							</p>
+						</fieldset>
+						<fieldset id ="q2"> 
+						<legend>2. XMLHttpRequest allow webpage to? (2 marks)</legend>
+							<p>
+								<input type="radio" name="q2" id="q2a" value="q2a" required="required"/>
+								<label for="q2a">Load multiple page at once.</label>
+							</p>
+							<p>
+								<input type="radio" name="q2" id="q2b" value="q2b"/>
+								<label for="q2b">Get content without refreshing.</label>
+							</p>
+							<p>
+								<input type="radio" name="q2" id="q2c" value="q2c"/>
+								<label for="q2c">Have online background music playing while doing homework.</label>
+							</p>
+							<p>
+								<input type="radio" name="q2" id="q2d" value="q2d"/>
+								<label for="q2d">Get content without refreshing.</label>
+							</p>
+						</fieldset> 
+						<h2>3. Which of the following is the disadvantage of XMLHttpRequest? (2 marks)</h2>
+						<p>
+							<input type="checkbox" id="q3a" name="q3a" value="q3a"/>
+							<label for="q3a">Have to purchase lisence in order to implement it.</label> 
+						</p>
+						<p>
+							<input type="checkbox" id="q3b" name="q3b" value="q3b"/>
+							<label for="q3b">Require long hour of development and design.</label> 	
+						</p>
+						<p>
+							<input type="checkbox" id="q3c" name="q3c" value="q3c"/>
+							<label for="q3c">Not supported by Safari because Apple has their own version.</label> 
+						</p>
+						<p>
+							<input type="checkbox" id="q3d" name="q3d" value="q3d"/>
+							<label for="q3d">Its open soruce, thus anyone can gain access to the source code.</label> 				
+						</p>
+						<h2>4. When did XMLHttpRequest moved to W3C? (2 marks)</h2>
+						<p>
+							<select name="q4" id="q4" required="required">
+								<option value="" hidden="hidden" selected="selected" disabled="disabled">Year</option>
+								<option value="2009">2009</option>
+								<option value="2010">2010</option>
+								<option value="2011">2011</option>
+							</select>
+						</p>
+						<h2><label for="q5">5. There are how many readyState value in total? (2 marks)</label></h2>
+						<p><input type="text" id="q5" name="q5"  required="required"/></p>
+					</fieldset>
+					<button type="submit" id="submit">submit</button>
+					<input type= "reset" value="Reset"/>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<section class="footer">
+				<div class="container" id="footerPadding">
+					<h2>101056211</h2>
+					<h2>&#169; Nixon Yong Joe Kien</h2>
+					<div id="links">
+						<a href="mailto:101056211@student.swin.edu.au"><img height="40" width="40" src="image/email.png" alt="Email Me"/></a>
+						<a href="https://www.linkedin.com/in/nixon-yong-803130108"><img height="40" width="40" src="image/linkedin.png" alt="Phone"/></a>
+						<a href="https://facebook.com/nixonyong911"><img height="40" width="40" src="image/facebook.png" alt="Phone"/></a>
+					</div>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>

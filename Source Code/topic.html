@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Assignment 1 topic.html"/>
+		<meta name="keywords" content="HTML5, tags"/>
+		<meta name="author" content="Nixon Yong Joe Kien, 101056211"/>
+		<link href="styles/style.css" rel="stylesheet"/>
+		<title>Topic</title>
+	</head>
+	<body>
+		<section class ="navMenu">
+			<div class ="container">
+				<div class="dropdown">
+					<input type="image" src="image/menu.png" class="menu" width="40" height="40" alt="menu"/>
+					<div class="dropdown-content">
+						<a href="index.html">Home</a> 
+						<a href="topic.html">XMLHttpRequest</a> 
+						<a href="reference.html">Reference</a>
+						<a href="enhancement.html">Extra 1</a>
+						<a href="enhancement2.html">Extra 2</a>
+						<a href="enhancement3.html">Extra 3</a>
+						<a href="quiz.html">Quiz</a> 
+						<a href="supervisor.html">Supervisor</a> 
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="header">
+			<div class="container">
+				<h1>About XML Http Request</h1>
+			</div>
+		</section>
+		<section class="body">
+			<div class="container">
+				<h2>History</h2>
+				<p>The first appearance of XMLHttpRequest was in Internet Explorer 5 which was released by Microsoft and is known to be the key behind most of the key fundamental technology of many modern web application; Google Email. Although it contains XML in its name, it was not originally invented to be tied to XML only. Moreover, despite its revolutionary role in AJAX, the early release of XMLHttpRequest has very limited capability such as text-based-only data transfer and unable to handle cross-domain request. </p>
+				<aside>Soon after, Mozilla also implemented its own version or XMLHttpRequest in contrast to Microsoft’s and many other browser such as Safari and Opera followed. In 2006, W3C has published the best practice for XMLHttpRequest and where AJAX and Web 2.0 was released, whereby after that it became widely used everywhere. In 2008, XMLHttpRequest level 2 draft was released which include few new features such as support for binary and text-based data transfer, safe cross-origin request and many more. Lastly, in 2011, XMLHttpRequest level 2 was finally merged with the original XMLHttpRequest.</aside>
+				<h2>Overview of XMLHttpRequest</h2>
+				<img src="image/xmlhttprequest.png" alt="xmlhttprequest"/>
+				<h2>More about XMLHttpRequest</h2>
+				<p>Although XMLHttpRequest was created by Microsoft and has XML in the name, it is now been standardized by WHATWG and moved to W3C in 2006. Moreover, it can receive any kind of data, and support different type of protocols other than HTTP, and different kind of web browser. Lastly it allow JavaScript to run synchronously, however, it is not recommended to run synchronously since all other operation is halted until the current one is completed, but in some case where the current request need to be completed before able to proceed to next task.</p>
+				<h2>Synchronous or Asynchronous? </h2>
+				<table class="table">
+					<tr>
+						<th></th>
+						<th>Synchronous</th>
+						<th>Asynchronous</th>
+					</tr>
+					<tr>
+						<td>Complexity</td>
+						<td>Low</td>
+						<td>High</td>
+					</tr>
+					<tr>
+						<td>Processing</td>
+						<td>Block scrip to run until one transfer is complete</td>
+						<td>Continue work while request is being handle</td>
+					</tr>
+					<tr>
+						<td>Performance</td>
+						<td>Slower</td>
+						<td>Faster</td>
+					</tr>
+					<tr>
+						<td>Fetching Data</td>
+						<td>One JavaScript runs at a time</td>
+						<td>Multiple javaScript updating independently and concurrently</td>
+					</tr>
+				</table>
+				<h2>Advantage of XMLHttpRequest</h2>
+				<ul>
+					<li>Can be easily implemented when user have great understanding of JavaScript</li>
+					<li>Lower traffic in both client and server side</li>
+					<li>Higher interaction means better responsive on the whole page</li>
+					<li>User doesn’t have to spam refresh to get updated content</li>
+					<li>Give user instant validation</li>
+				</ul>
+				<h2>Disadvantage of XMLHttpRequest</h2>
+				<ul>
+					<li>It's open source, meaning anyone can gain access to the source code</li>
+					<li>Due to its design architecture, user only able to gain information only from one server.</li>
+					<li>Complicated and complex</li>
+					<li>Require JavaScript to be enabled in browser</li>
+				</ul>
+				<h2>Step of creating XMLHttpRequest</h2>
+				<ol>
+					<li>Determine type of web browser where the html will be running on and create the object based on it. </li>
+					<li>Create function that is able to receive data from server, this could be achieved by using onReadyStateChange property which able to store the function that responsible for receiving response from server.</li>
+					<li>After creating function to receive data from server, we need to know the status of the server’s response, thus readyState property is used to confirm that the response from server is complete, below shows a table which indicate the readyState value’s meaning</li>
+					<li>Now we know whether the response is complete, next we need to be able to retrieve the response, therefore this is where responseText property take place. This allow user to access the server’s response. </li>
+					<li>After getting all the responses from server, now we are ready to send server some request. First, in Ajax application, we need to define the URL of server-side script. Next we use the function to send the request. </li>
+					<li>Lastly, after we had done writing the xmlhttprequest, we will have to implement in our html file. This can be done by using onChange attribute.</li>
+				</ol>
+				<h2>Type of readyState</h2>
+				<table class="table">
+					<tr>
+						<th>ReadyState Value</th>
+						<th>Defination</th>
+					</tr>
+					<tr>
+						<td><img height ="35" width ="35" src="image/0.png" alt="0"/></td>
+						<td>XMLHttpRequest object was created but not initialized</td>
+					</tr>
+					<tr>
+						<td><img height ="35" width ="35" src="image/1.png" alt="1"/></td>
+						<td>XMLHttpRequest has called open() method and is ready to send request to server</td>
+					</tr>
+					<tr>
+						<td><img height ="35" width ="35" src="image/2.png" alt="2"/></td>
+						<td>XMLHttpRequest has sent request to server but yet a response from server</td>
+					</tr>
+					<tr>
+						<td><img height ="35" width ="35" src="image/3.png" alt="3"/></td>
+						<td>HTTP is receiving data from server, however, message is not fully received</td>
+					</tr>
+					<tr>
+						<td><img height ="35" width ="35" src="image/4.png" alt="4"/></td>
+						<td>The response from server is completely received.</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<footer>
+			<section class="footer">
+				<div class="container" id="footerPadding">
+					<h2>101056211</h2>
+					<h2>&#169; Nixon Yong Joe Kien</h2>
+					<div id="links">
+						<a href="mailto:101056211@student.swin.edu.au"><img height="40" width="40" src="image/email.png" alt="Email Me"/></a>
+						<a href="https://www.linkedin.com/in/nixon-yong-803130108"><img height="40" width="40" src="image/linkedin.png" alt="Phone"/></a>
+						<a href="https://facebook.com/nixonyong911"><img height="40" width="40" src="image/facebook.png" alt="Phone"/></a>
+					</div>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>
